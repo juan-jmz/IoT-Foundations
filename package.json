@@ -1,0 +1,20 @@
+{
+  "name": "iot-foundations",
+  "version": "1.0.0",
+  "description": "Base template for building production-ready IoT microservices in TypeScript, including standardized structure, environment configuration, a reusable MQTT client, and Docker support.",
+  "author": "Juan Manuel Jimenez",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "mqtt": "^5.0.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.0"
+  }
+}
